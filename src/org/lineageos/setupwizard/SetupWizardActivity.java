@@ -43,15 +43,7 @@ public class SetupWizardActivity extends BaseSetupWizardActivity {
         if (LOGV) {
             Log.v(TAG, "onCreate savedInstanceState=" + savedInstanceState);
         }
-        if (SetupWizardUtils.hasGMS(this)) {
-            SetupWizardUtils.disableHome(this);
-            if (SetupWizardUtils.isOwner()) {
-                Settings.Global.putInt(getContentResolver(),
-                        Settings.Global.ASSISTED_GPS_ENABLED, 1);
-            }
-            finish();
-        } else if (WizardManagerHelper.isUserSetupComplete(this)
-                && !SetupWizardUtils.isManagedProfile(this)) {
+        if (WizardManagerHelper.isUserSetupComplete(this)) {
             SetupWizardUtils.finishSetupWizard(this);
             finish();
         } else {

@@ -40,7 +40,8 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ServiceInfo;
 import android.content.res.Resources;
-import android.hardware.biometrics.BiometricManager;
+import android.hardware.face.FaceManager;
+import android.hardware.fingerprint.FingerprintManager;
 import android.net.ConnectivityManager;
 import android.os.Binder;
 import android.os.SystemProperties;
@@ -52,7 +53,6 @@ import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
-import org.lineageos.internal.util.PackageManagerUtils;
 import org.lineageos.setupwizard.BiometricActivity;
 import org.lineageos.setupwizard.BluetoothSetupActivity;
 import org.lineageos.setupwizard.NetworkSetupActivity;
@@ -186,22 +186,6 @@ public class SetupWizardUtils {
         }
     }
 
-    public static boolean hasGMS(Context context) {
-        String gmsSuwPackage = hasLeanback(context) ? GMS_TV_SUW_PACKAGE : GMS_SUW_PACKAGE;
-
-        if (PackageManagerUtils.isAppInstalled(context, GMS_PACKAGE) &&
-                PackageManagerUtils.isAppInstalled(context, gmsSuwPackage)) {
-            PackageManager packageManager = context.getPackageManager();
-            if (LOGV) {
-                Log.v(TAG, GMS_SUW_PACKAGE + " state = " +
-                        packageManager.getApplicationEnabledSetting(gmsSuwPackage));
-            }
-            return packageManager.getApplicationEnabledSetting(gmsSuwPackage) !=
-                    COMPONENT_ENABLED_STATE_DISABLED;
-        }
-        return false;
-    }
-
     public static boolean isPackageInstalled(Context context, String packageName) {
         PackageManager pm = context.getPackageManager();
         try {
@@ -249,14 +233,29 @@ public class SetupWizardUtils {
     }
 
     public static boolean hasBiometric(Context context) {
-        BiometricManager biometricManager = context.getSystemService(BiometricManager.class);
-        int result = biometricManager.canAuthenticate(
-                BiometricManager.Authenticators.BIOMETRIC_WEAK);
-        return switch (result) {
-            case BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED,
-                    BiometricManager.BIOMETRIC_SUCCESS -> true;
-            default -> false;
-        };
+        return hasFingerprint(context) || hasFace(context);
+    }
+
+    public static boolean hasFingerprint(Context context) {
+        PackageManager packageManager = context.getPackageManager();
+        if (packageManager.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT)) {
+            FingerprintManager fingerprintManager = (FingerprintManager)
+                    context.getSystemService(Context.FINGERPRINT_SERVICE);
+            return fingerprintManager.isHardwareDetected();
+        } else {
+            return false;
+        }
+    }
+
+    public static boolean hasFace(Context context) {
+        PackageManager packageManager = context.getPackageManager();
+        if (packageManager.hasSystemFeature(PackageManager.FEATURE_FACE)) {
+            FaceManager faceManager = (FaceManager)
+                    context.getSystemService(Context.FACE_SERVICE);
+            return faceManager.isHardwareDetected();
+        } else {
+            return false;
+        }
     }
 
     public static boolean simMissing() {
