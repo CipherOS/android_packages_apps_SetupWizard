@@ -2,6 +2,7 @@
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
      Copyright (C) 2017-2020 The LineageOS Project
+     Copyright (C) 2020 Cipher OS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,7 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Setup Wizard</string>
-    <string name="os_name" translatable="false">LineageOS</string>
+    <string name="os_name" translatable="false">CipherOS</string>
 
     <string name="lineage_wizard_script_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/lineage_wizard_script</string>
     <string name="lineage_wizard_script_user_uri" translatable="false">android.resource://org.lineageos.setupwizard/raw/lineage_wizard_script_user</string>
@@ -32,7 +33,7 @@
     <string name="loading">Just a sec\u2026</string>
 
     <string name="setup_complete">Setup is complete</string>
-    <string name="setup_welcome">Welcome</string>
+    <string name="setup_welcome">Welcome to CipherOS </string>
     <string name="setup_locale">Language</string>
     <string name="setup_wifi">Select Wi-Fi</string>
     <string name="setup_sim_missing">SIM card missing</string>
@@ -67,12 +68,12 @@
 
     <string name="emergency_call">Emergency call</string>
 
-    <string name="setup_services">LineageOS features</string>
-    <string name="services_explanation" product="tablet">These services work for you to extend the capabilities of your tablet. Data will be used in accordance with LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
-    <string name="services_explanation" product="default">These services work for you to extend the capabilities of your phone. Data will be used in accordance with LineageOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="setup_services">CipherOS features</string>
+    <string name="services_explanation" product="tablet">These services work for you to extend the capabilities of your tablet. Data will be used in accordance with CipherOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
+    <string name="services_explanation" product="default">These services work for you to extend the capabilities of your phone. Data will be used in accordance with CipherOS\'s <xliff:g id="name" example="Privacy Policy">%s</xliff:g>.</string>
     <string name="services_privacy_policy">Privacy Policy</string>
-    <string name="services_help_improve_cm">Help improve <xliff:g id="name" example="LineageOS">%s</xliff:g></string>
-    <string name="services_metrics_label"><xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g> by automatically sending diagnostic and usage data to LineageOS. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="LineageOS">%2$s</xliff:g> features.</string>
+    <string name="services_help_improve_cm">Help improve <xliff:g id="name" example="CipherOS">%s</xliff:g></string>
+    <string name="services_metrics_label"><xliff:g id="name" example="Help improve CipherOS">%1$s</xliff:g> by automatically sending diagnostic and usage data to CipherOS. This information can’t be used to identify you and lends a hand to teams working on things like battery life, app performance, and new <xliff:g id="name" example="CipherOS">%2$s</xliff:g> features.</string>
     <string name="services_os_nav_keys_label"><b>Use on screen navigation keys</b> instead of hardware keys.</string>
 
     <string name="setup_unlock">Unlock</string>
@@ -103,13 +104,13 @@
 
     <!-- Backup Restore -->
     <string name="intro_restore_title">Restore apps and data</string>
-    <string name="intro_restore_subtitle" product="tablet">If you have a backup from your last LineageOS tablet, you can restore it here.</string>
-    <string name="intro_restore_subtitle" product="default">If you have a backup from your last LineageOS phone, you can restore it here.</string>
+    <string name="intro_restore_subtitle" product="tablet">If you have a backup from your last CipherOS tablet, you can restore it here.</string>
+    <string name="intro_restore_subtitle" product="default">If you have a backup from your last CipherOS phone, you can restore it here.</string>
     <string name="intro_restore_button">Restore from backup</string>
 
     <!-- Update Recovery -->
-    <string name="update_recovery_title">Update Lineage Recovery</string>
-    <string name="update_recovery_description">Updates Lineage Recovery on first boot subsequent to every update.</string>
+    <string name="update_recovery_title">Update Cipher Recovery</string>
+    <string name="update_recovery_description">Updates Cipher Recovery on first boot subsequent to every update.</string>
     <string name="update_recovery_warning">Recovery will be updated as soon as you proceed to the next step. If you wish to keep it intact, disable this feature.</string>
-    <string name="update_recovery_setting">Update Lineage Recovery alongside the OS</string>
+    <string name="update_recovery_setting">Update Cipher Recovery alongside the OS</string>
 </resources>

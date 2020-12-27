@@ -2,6 +2,7 @@
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
      Copyright (C) 2017-2020 The LineageOS Project
+     Copyright (C) 2020 Cipher OS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -51,12 +52,12 @@
     <string name="yes">Bəli</string>
     <string name="data_sim_name">SIM <xliff:g id="sub">%1$d</xliff:g> - <xliff:g id="name">%2$s</xliff:g></string>
     <string name="emergency_call">Fövqəladə vəziyyət zəngləri</string>
-    <string name="setup_services">LineageOS özəllikləri</string>
-    <string name="services_explanation" product="tablet">Bu xidmətlər planşetinizin qabiliyyətlərini artırar. Verilənlər LineageOS<xliff:g id="name" example="Gizlilik Siyasəti">%s</xliff:g> şərtlərinə uyğun olaraq istifadə ediləcək.</string>
-    <string name="services_explanation" product="default">Bu xidmətlər telefonunuzun qabiliyyətlərini artırar. Verilənlər LineageOS<xliff:g id="name" example="Gizlilik Siyasəti">%s</xliff:g> şərtlərinə uyğun olaraq istifadə ediləcək.</string>
+    <string name="setup_services">CipherOS özəllikləri</string>
+    <string name="services_explanation" product="tablet">Bu xidmətlər planşetinizin qabiliyyətlərini artırar. Verilənlər CipherOS<xliff:g id="name" example="Gizlilik Siyasəti">%s</xliff:g> şərtlərinə uyğun olaraq istifadə ediləcək.</string>
+    <string name="services_explanation" product="default">Bu xidmətlər telefonunuzun qabiliyyətlərini artırar. Verilənlər CipherOS<xliff:g id="name" example="Gizlilik Siyasəti">%s</xliff:g> şərtlərinə uyğun olaraq istifadə ediləcək.</string>
     <string name="services_privacy_policy">Gizlilik Siyasəti</string>
-    <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g>u təkmilləşdirməyə kömək edin</string>
-    <string name="services_metrics_label">LineageOS-a diaqnostikanı və istifadə verilənlərini avtomatik göndərərək <xliff:g id="name" example="Help improve LineageOS">%1$s</xliff:g>. Bu məlumatlarda kimliyiniz istifadə edilmir və batereya ömrü, tətbiq performansı və yeni <xliff:g id="name" example="LineageOS">%2$s</xliff:g> xüsusiyyətləri kimi işlərlə məşğul olan komandalara kömək edər.</string>
+    <string name="services_help_improve_cm"><xliff:g id="name" example="CipherOS">%s</xliff:g>u təkmilləşdirməyə kömək edin</string>
+    <string name="services_metrics_label">CipherOS-a diaqnostikanı və istifadə verilənlərini avtomatik göndərərək <xliff:g id="name" example="Help improve CipherOS">%1$s</xliff:g>. Bu məlumatlarda kimliyiniz istifadə edilmir və batereya ömrü, tətbiq performansı və yeni <xliff:g id="name" example="CipherOS">%2$s</xliff:g> xüsusiyyətləri kimi işlərlə məşğul olan komandalara kömək edər.</string>
     <string name="services_os_nav_keys_label"><b>Avadanlıq düymələri əvəzinə ekran üstü hərəkət düymələrindən istifadə edin.</b></string>
     <string name="setup_unlock">Kilidi aç</string>
     <string name="setup_device_locked">Bu cihaz istifadəçisi tərəfindən kilidlənib.</string>
