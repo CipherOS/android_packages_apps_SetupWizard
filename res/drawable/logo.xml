@@ -1,28 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Copyright (c) 2017, 2022 The LineageOS Project
-
+    Copyright (c) 2019 - 2024 The CipherOS Project
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
-
         http://www.apache.org/licenses/LICENSE-2.0
-
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
 -->
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="512dp"
-    android:height="260dp"
-    android:viewportWidth="512"
-    android:viewportHeight="260">
-
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="vector"
+    android:width="84dp"
+    android:height="86dp"
+    android:viewportWidth="84"
+    android:viewportHeight="86">
+    <group android:name="group">
+        <group android:name="wrapper">
+            <clip-path
+                android:name="clip1"
+                android:pathData="M 0 0 L 84 0 L 84 86 L 0 86 Z"/>
+            <group android:name="surface5">
+                <path
+                    android:name="path"
+                    android:pathData="M 62.75 51.375 C 62.75 56.375 60.949 60.949 57.977 64.523 L 53.648 60.477 C 55.625 57.977 56.824 54.801 56.824 51.375 C 56.824 47.5 55.324 44 52.875 41.375 L 57.148 37.273 C 60.625 40.977 62.75 45.926 62.75 51.375 Z M 62.75 51.375"
+                    android:fillColor="#7e7ef7"
+                    android:fillAlpha="0.4"
+                    android:strokeWidth="1"/>
+            </group>
+        </group>
+    </group>
     <path
-        android:fillColor="@color/lineage_accent"
-        android:pathData="M416,128a39.92,39.92,0,0,0-31.11,14.87l-1.5-.6A294.79,294.79,0,0,0,336,128.14s0-.09,0-.14a80,80,0,1,0-160,0s0,.09,0,.13l-1.72
-.38 a293.48,293.48,0,0,0-45.67,13.76l-1.5 .6
-a40,40,0,1,0,7.39,14.28h0a277.33,277.33,0,0,1,43.1-13,80,80,0,0,0,156.73,0,277.3,277.3,0,0,1,43.11,13h0A40,40,0,1,0,416,128ZM96,192a24,24,0,1,1,24-24A24,24,0,0,1,96,192Zm160,0a64,64,0,1,1,64-64A64.07,64.07,0,0,1,256,192Zm160,0a24,24,0,1,1,24-24A24,24,0,0,1,416,192ZM288,128a32,32,0,1,1-32-32A32,32,0,0,1,288,128Z" />
+        android:name="path_1"
+        android:pathData="M 42.125 30.75 C 48.051 30.773 53.398 33.301 57.148 37.273 L 52.875 41.375 C 50.176 38.449 46.301 36.648 42 36.648 C 33.824 36.648 27.176 43.25 27.176 51.375 C 27.176 59.5 33.824 66.102 42 66.102 C 46.727 66.102 50.949 63.898 53.648 60.477 L 57.977 64.523 C 54.199 69.074 48.5 71.977 42.125 72 C 40.691 72 39.309 71.867 37.977 71.602 C 28.449 69.75 21.25 61.398 21.25 51.375 C 21.25 42.074 27.449 34.199 35.949 31.648 C 37.898 31.066 39.957 30.766 42.125 30.75 Z M 42.125 30.75"
+        android:fillColor="#7e7ef7"
+        android:strokeWidth="1"/>
+    <path
+        android:name="path_2"
+        android:pathData="M 30.25 25 C 30.25 18.926 35.5 14 42 14 C 48.5 14 53.75 18.926 53.75 25 L 53.75 36 L 47.875 36 L 47.875 25 C 47.875 21.949 45.25 19.5 42 19.5 C 38.75 19.5 36.125 21.949 36.125 25 L 36.125 36 L 30.25 36 Z M 30.25 25"
+        android:fillColor="#7e7ef7"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
 </vector>
