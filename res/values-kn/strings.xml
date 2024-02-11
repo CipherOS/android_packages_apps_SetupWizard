@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2013-2015 The CyanogenMod Project
-     Copyright (C) 2017-2020, 2022 The LineageOS Project
+     Copyright (C) 2017-2020, 2022 The CipherOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -47,8 +47,8 @@
     <string name="no">ಬೇಡ</string>
     <string name="yes">ಹೌದು</string>
     <string name="emergency_call">ತುರ್ತುಸ್ಥಿತಿ ಕರೆ</string>
-    <string name="setup_services">LineageOS ವೈಶಿಷ್ಟ್ಯಗಳು</string>
-    <string name="services_help_improve_cm"><xliff:g id="name" example="LineageOS">%s</xliff:g> ಸುಧಾರಿಸಲು ನೆರವಾಗು</string>
+    <string name="setup_services">CipherOS ವೈಶಿಷ್ಟ್ಯಗಳು</string>
+    <string name="services_help_improve_cm"><xliff:g id="name" example="CipherOS">%s</xliff:g> ಸುಧಾರಿಸಲು ನೆರವಾಗು</string>
     <string name="services_os_nav_keys_label">ಯಂತ್ರಾಂಶ ಕೀಲಿಗಳ ಬದಲಾಗಿ <b>ಪರದೆಯ ಮೇಲಿನ ಸಂಚಾಲನೆ ಕೀಲಿಗಳನ್ನು ಉಪಯೋಗಿಸಿ</b>.</string>
     <string name="settings_biometric_setup_title">ಬ್ಯಾಕಪ್ ಪರದೆ ಲಾಕ್ ಪ್ರಕಾರವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
     <string name="settings_biometric_setup_details">ನಿಮ್ಮ ಪರದೆಯನ್ನು ನೀವು ಹೇಗೆ ಲಾಕ್ ಮಾಡಲು ಬಯಸುವಿರಿ?</string>
