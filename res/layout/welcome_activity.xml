@@ -37,20 +37,20 @@
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2"/>
+                android:layout_weight="1"/>
 
-            <ImageView
-                android:id="@+id/brand_logo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/logo" />
+            <ImageView 
+                 android:id="@id/brand_logo"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/logo"
+                 android:scaleType="fitCenter"
+                 android:adjustViewBounds="false" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="0.5"/>
+                android:layout_weight="0.2"/>
         </LinearLayout>
 
         <LinearLayout
